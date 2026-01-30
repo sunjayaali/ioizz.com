@@ -1,0 +1,503 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ioizz - Productivity, Redefined</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .neon-glow {
+        box-shadow: 0 0 20px rgba(19, 127, 236, 0.4);
+      }
+      .orb-gradient {
+        background: radial-gradient(
+          circle at 30% 30%,
+          #137fec,
+          #a855f7,
+          #06b6d4
+        );
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] dark:text-slate-50 transition-colors duration-300"
+  >
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <!-- Top Navigation Bar -->
+      <header
+        class="fixed top-0 z-50 w-full backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-solid border-[#e7edf3] dark:border-slate-800 px-6 lg:px-40 py-3"
+      >
+        <div class="flex items-center justify-between whitespace-nowrap">
+          <div class="flex items-center gap-4 text-primary">
+            <div class="size-8 flex items-center justify-center">
+              <span class="material-symbols-outlined text-3xl font-bold"
+                >rocket_launch</span
+              >
+            </div>
+            <h2
+              class="text-[#0d141b] dark:text-white text-2xl font-black leading-tight tracking-tight"
+            >
+              Ioizz
+            </h2>
+          </div>
+          <div class="hidden md:flex flex-1 justify-end gap-10 mr-10">
+            <div class="flex items-center gap-9">
+              <a
+                class="text-[#4c739a] dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                href="#"
+                >Features</a
+              >
+              <a
+                class="text-[#4c739a] dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                href="#"
+                >How it Works</a
+              >
+              <a
+                class="text-[#4c739a] dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-semibold transition-colors"
+                href="#"
+                >Pricing</a
+              >
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <button
+              class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-lg hover:opacity-90 transition-all"
+            >
+              <span>Get Started</span>
+            </button>
+            <button
+              class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-[#e7edf3] dark:bg-slate-800 text-[#0d141b] dark:text-white text-sm font-bold hover:bg-[#cfdbe7] dark:hover:bg-slate-700 transition-all"
+            >
+              <span>Login</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1 mt-20">
+        <!-- Hero Section -->
+        <section class="relative px-6 lg:px-40 py-16 lg:py-24 overflow-hidden">
+          <div
+            class="max-w-[1200px] mx-auto flex flex-col items-center text-center"
+          >
+            <div class="mb-8 relative">
+              <!-- Abstract 3D Orb Representation -->
+              <div
+                class="orb-gradient size-48 md:size-64 rounded-full blur-2xl opacity-30 absolute -top-4 -left-4 animate-pulse"
+              ></div>
+              <div
+                class="orb-gradient size-48 md:size-64 rounded-full shadow-[0_0_60px_-15px_rgba(19,127,236,0.6)] relative z-10 flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-white text-6xl opacity-50"
+                  >data_exploration</span
+                >
+              </div>
+            </div>
+            <h1
+              class="text-[#0d141b] dark:text-white text-5xl md:text-7xl font-black leading-tight tracking-[-0.04em] mb-6"
+            >
+              Productivity, <span class="text-primary">Redefined.</span>
+            </h1>
+            <p
+              class="text-[#4c739a] dark:text-slate-400 text-lg md:text-xl font-medium max-w-[600px] leading-relaxed mb-10"
+            >
+              The AI-driven workspace that thinks three steps ahead. Automate
+              the mundane and reclaim your focus.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+              <button
+                class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-lg font-bold neon-glow hover:scale-105 transition-all"
+              >
+                <span>Start for Free</span>
+              </button>
+              <button
+                class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 border-2 border-primary/30 dark:border-primary/50 text-primary dark:text-primary text-lg font-bold hover:bg-primary/5 transition-all"
+              >
+                <span>Watch Demo</span>
+              </button>
+            </div>
+            <!-- Trusted By Section -->
+            <div class="mt-20 w-full">
+              <p
+                class="text-[#4c739a] dark:text-slate-500 text-xs font-bold uppercase tracking-[0.2em] mb-8 text-center"
+              >
+                Trusted by visionaries at
+              </p>
+              <div
+                class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500"
+              >
+                <div class="flex items-center gap-2 font-bold text-xl">
+                  <span class="material-symbols-outlined">api</span> NEXUS
+                </div>
+                <div class="flex items-center gap-2 font-bold text-xl">
+                  <span class="material-symbols-outlined">cloud_circle</span>
+                  STRATUS
+                </div>
+                <div class="flex items-center gap-2 font-bold text-xl">
+                  <span class="material-symbols-outlined">hexagon</span> VERTEX
+                </div>
+                <div class="flex items-center gap-2 font-bold text-xl">
+                  <span class="material-symbols-outlined">all_inclusive</span>
+                  INFINITY
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Feature Section: How it Works -->
+        <section class="px-6 lg:px-40 py-20 bg-white/50 dark:bg-black/20">
+          <div class="max-w-[1200px] mx-auto">
+            <div class="flex flex-col gap-4 mb-16 items-center text-center">
+              <h2
+                class="text-[#0d141b] dark:text-white text-3xl md:text-5xl font-black tracking-tight"
+              >
+                How it Works
+              </h2>
+              <div class="h-1.5 w-24 bg-primary rounded-full"></div>
+              <p
+                class="text-[#4c739a] dark:text-slate-400 text-lg max-w-[720px] mt-2"
+              >
+                Experience the future of efficiency with our core AI
+                capabilities designed for modern teams.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Automate -->
+              <div
+                class="flex flex-col gap-6 rounded-2xl border border-[#cfdbe7] dark:border-slate-800 bg-white dark:bg-[#1a2632] p-8 hover:border-primary/50 transition-all group"
+              >
+                <div
+                  class="size-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-inner"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >auto_mode</span
+                  >
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-[#0d141b] dark:text-white text-2xl font-bold">
+                    Automate
+                  </h3>
+                  <p
+                    class="text-[#4c739a] dark:text-slate-400 text-base leading-relaxed"
+                  >
+                    Let AI handle the repetitive tasks, from scheduling meetings
+                    to drafting follow-ups, so you can focus on creativity.
+                  </p>
+                </div>
+              </div>
+              <!-- Organize -->
+              <div
+                class="flex flex-col gap-6 rounded-2xl border border-[#cfdbe7] dark:border-slate-800 bg-white dark:bg-[#1a2632] p-8 hover:border-primary/50 transition-all group"
+              >
+                <div
+                  class="size-14 rounded-xl bg-[#a855f7]/10 flex items-center justify-center text-[#a855f7] group-hover:bg-[#a855f7] group-hover:text-white transition-all duration-300 shadow-inner"
+                >
+                  <span class="material-symbols-outlined text-3xl"
+                    >grid_view</span
+                  >
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-[#0d141b] dark:text-white text-2xl font-bold">
+                    Organize
+                  </h3>
+                  <p
+                    class="text-[#4c739a] dark:text-slate-400 text-base leading-relaxed"
+                  >
+                    Smart sorting for your complex projects. Our engine
+                    automatically categorizes files, tasks, and communications
+                    effortlessly.
+                  </p>
+                </div>
+              </div>
+              <!-- Execute -->
+              <div
+                class="flex flex-col gap-6 rounded-2xl border border-[#cfdbe7] dark:border-slate-800 bg-white dark:bg-[#1a2632] p-8 hover:border-primary/50 transition-all group"
+              >
+                <div
+                  class="size-14 rounded-xl bg-[#06b6d4]/10 flex items-center justify-center text-[#06b6d4] group-hover:bg-[#06b6d4] group-hover:text-white transition-all duration-300 shadow-inner"
+                >
+                  <span class="material-symbols-outlined text-3xl">bolt</span>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-[#0d141b] dark:text-white text-2xl font-bold">
+                    Execute
+                  </h3>
+                  <p
+                    class="text-[#4c739a] dark:text-slate-400 text-base leading-relaxed"
+                  >
+                    Focus on what matters most; we handle the logistical heavy
+                    lifting and provide real-time performance insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Dashboard Preview Section -->
+        <section class="px-6 lg:px-40 py-24">
+          <div class="max-w-[1200px] mx-auto">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6"
+            >
+              <h2
+                class="text-[#0d141b] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-tight max-w-[500px]"
+              >
+                Your entire workflow, in one unified view.
+              </h2>
+              <button
+                class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all underline decoration-2 underline-offset-4"
+              >
+                Explore the dashboard
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+            <div class="relative group">
+              <!-- Decorative backgrounds for depth -->
+              <div
+                class="absolute -top-10 -right-10 size-64 bg-primary/20 rounded-full blur-3xl -z-10"
+              ></div>
+              <div
+                class="absolute -bottom-10 -left-10 size-64 bg-purple-500/20 rounded-full blur-3xl -z-10"
+              ></div>
+              <!-- Media Player Component Style Dashboard Preview -->
+              <div
+                class="relative flex items-center justify-center bg-slate-900 aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl border border-white/10"
+                data-alt="High fidelity preview of the Ioizz AI dashboard interface"
+              >
+                <img
+                  alt="Dashboard Preview"
+                  class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                  data-alt="Screenshot of an analytics dashboard with blue and purple charts"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw_kVqWdFf5oYnEGGD-ZDNR091DXlMVLMzqmAub6tL8AbJpJJFsSLIAXvYs5pog0C0uNz4ZgjFWHX6js5AfTxYyRdrNxtXlxnMtCnGRy0nG5q9pEIRsV4oKrCu9V4FwhQpw-fa82JfMdttyjOOyCPhhNjik5DaucpOIHfL3H3TcdlRqD745eWrAk2xetP66h89tZb0ofOQI9B3BCJtG1jfdcK4rWS7SFE3QXUmClPXKRwqqYuwLavyrXeS34OFzqnMsVQpv1eUX7k"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex flex-col justify-end p-10"
+                >
+                  <div class="flex items-center gap-4">
+                    <button
+                      class="flex shrink-0 items-center justify-center rounded-full size-16 bg-primary text-white hover:scale-110 transition-all shadow-[0_0_30px_rgba(19,127,236,0.6)]"
+                    >
+                      <span
+                        class="material-symbols-outlined text-4xl"
+                        style="font-variation-settings: &quot;FILL&quot; 1"
+                        >play_arrow</span
+                      >
+                    </button>
+                    <div>
+                      <p class="text-white font-bold text-xl">
+                        Watch Ioizz in action
+                      </p>
+                      <p class="text-slate-300 text-sm">
+                        See how we save teams an average of 12 hours weekly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="px-6 lg:px-40 py-20">
+          <div
+            class="max-w-[1200px] mx-auto bg-primary rounded-[2rem] p-10 md:p-20 text-center text-white relative overflow-hidden shadow-2xl"
+          >
+            <!-- Background accent -->
+            <div
+              class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform origin-top"
+            ></div>
+            <div class="relative z-10">
+              <h2 class="text-4xl md:text-6xl font-black mb-6">
+                Ready to scale?
+              </h2>
+              <p
+                class="text-white/80 text-lg md:text-xl max-w-[600px] mx-auto mb-10 leading-relaxed font-medium"
+              >
+                Join over 10,000+ teams who have already streamlined their
+                workflow with Ioizz.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  class="bg-white text-primary px-10 py-4 rounded-xl font-black text-lg shadow-xl hover:bg-slate-100 transition-all"
+                >
+                  Get Started Now
+                </button>
+                <button
+                  class="bg-transparent border-2 border-white/30 hover:bg-white/10 px-10 py-4 rounded-xl font-bold text-lg transition-all"
+                >
+                  Contact Sales
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer
+        class="px-6 lg:px-40 py-12 border-t border-[#e7edf3] dark:border-slate-800 bg-white dark:bg-background-dark transition-colors"
+      >
+        <div
+          class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12"
+        >
+          <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 text-primary mb-6">
+              <span class="material-symbols-outlined text-2xl font-bold"
+                >rocket_launch</span
+              >
+              <h2 class="text-[#0d141b] dark:text-white text-xl font-black">
+                Ioizz
+              </h2>
+            </div>
+            <p
+              class="text-[#4c739a] dark:text-slate-400 text-sm leading-relaxed mb-6"
+            >
+              Building the future of productivity with human-centric AI design.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="text-[#4c739a] hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined">share</span></a
+              >
+              <a
+                class="text-[#4c739a] hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined">groups</span></a
+              >
+              <a
+                class="text-[#4c739a] hover:text-primary transition-colors"
+                href="#"
+                ><span class="material-symbols-outlined"
+                  >alternate_email</span
+                ></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-[#0d141b] dark:text-white font-bold mb-6">
+              Product
+            </h4>
+            <ul
+              class="flex flex-col gap-4 text-sm text-[#4c739a] dark:text-slate-400 font-medium"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Automations</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Integrations</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Mobile App</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Desktop App</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#0d141b] dark:text-white font-bold mb-6">
+              Resources
+            </h4>
+            <ul
+              class="flex flex-col gap-4 text-sm text-[#4c739a] dark:text-slate-400 font-medium"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >API Reference</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Community</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-[#0d141b] dark:text-white font-bold mb-6">Legal</h4>
+            <ul
+              class="flex flex-col gap-4 text-sm text-[#4c739a] dark:text-slate-400 font-medium"
+            >
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#e7edf3] dark:border-slate-800 text-center"
+        >
+          <p class="text-[#4c739a] dark:text-slate-500 text-xs">
+            © 2024 Ioizz AI Technologies Inc. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
